@@ -1,19 +1,27 @@
 import React from "react";
 import styled from 'styled-components'
 
-import Exemplo8 from "./components/Exemplo8";
+import Postagem from "./components/Postagem";
 
+const PostFooter = styled.div`
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: center;
+  
+`
 class App extends React.Component {
   
 
   render() {
     
     return (
-      <div className="App">
+      <PostFooter>
         
-        <Exemplo8 />
+        <Postagem />
       
-      </div>
+      </PostFooter>
     );
   }
 }
