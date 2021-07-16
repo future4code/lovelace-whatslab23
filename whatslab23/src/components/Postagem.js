@@ -1,6 +1,43 @@
 import React from "react";
+import styled from 'styled-components'
 
-class Exemplo8 extends React.Component {
+const ContainerGeral = styled.div`
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  justify-content: flex-end;
+  border: 2px solid gray;
+  width: 40%;
+  height: 1200px;
+  margin: 15px;
+  
+`
+const FormularioBotao = styled.div`
+  
+  display: flex;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  
+`
+const Msg = styled.div`
+  
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-right: 230px;
+  align-items: left;
+  justify-content: flex-start;
+`
+const InputMsg = styled.div`
+  
+  display: flex;
+  margin-left: 10px;
+  `
+
+class Postagem extends React.Component {
   state = {
     
     pessoas: [
@@ -66,9 +103,11 @@ class Exemplo8 extends React.Component {
     });
 
     return (
-      <div>
-        <h1>WhatsLab</h1>
-        <div>
+      <ContainerGeral>
+        
+        <Msg>{listaDeComponentes}</Msg>
+        <FormularioBotao>
+        
           <input
             
             value={this.state.valorInputPessoa}
@@ -76,20 +115,22 @@ class Exemplo8 extends React.Component {
             onChange={this.onChangeInputPessoa}
             placeholder={"Nome"}
           />
+          <InputMsg>
           <input
             
             value={this.state.valorInputEmail}
             
             onChange={this.onChangeInputEmail}
-            placeholder={"Email"}
+            placeholder={"Mensagem"}
           />
+          </InputMsg>
           
           <button onClick={this.adicionaPessoa}>Enviar</button>
-        </div>
-        <div>{listaDeComponentes}</div>
-      </div>
+        </FormularioBotao>
+        
+      </ContainerGeral>
     );
   }
 }
 
-export default Exemplo8;
+export default Postagem;
