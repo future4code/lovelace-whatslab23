@@ -1,3 +1,26 @@
+WhatsLab
+
+O que funciona
+As mensagens e os nomes aparecem na tela
+
+O que não funciona
+CSS não ficou legal
+
+### Link Surge 
+https://organic-sock.surge.sh/
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
